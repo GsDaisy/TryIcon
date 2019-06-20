@@ -62,6 +62,7 @@
             // 
             this.ntiTray.Icon = ((System.Drawing.Icon)(resources.GetObject("ntiTray.Icon")));
             this.ntiTray.Text = "notifyIcon1";
+            this.ntiTray.DoubleClick += new System.EventHandler(this.NtiTray_DoubleClick);
             // 
             // cmsMenu
             // 
@@ -69,19 +70,21 @@
             this.폼보이기ToolStripMenuItem,
             this.종료ToolStripMenuItem});
             this.cmsMenu.Name = "cmsMenu";
-            this.cmsMenu.Size = new System.Drawing.Size(127, 48);
+            this.cmsMenu.Size = new System.Drawing.Size(181, 70);
             // 
             // 폼보이기ToolStripMenuItem
             // 
             this.폼보이기ToolStripMenuItem.Name = "폼보이기ToolStripMenuItem";
-            this.폼보이기ToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.폼보이기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.폼보이기ToolStripMenuItem.Text = "폼 보이기";
+            this.폼보이기ToolStripMenuItem.Click += new System.EventHandler(this.폼보이기ToolStripMenuItem_Click);
             // 
             // 종료ToolStripMenuItem
             // 
             this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
-            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.종료ToolStripMenuItem.Text = "종료";
+            this.종료ToolStripMenuItem.Click += new System.EventHandler(this.종료ToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -95,6 +98,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "트레이 아이콘 by 3199 ㅇㅇㅇ";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.cmsMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
